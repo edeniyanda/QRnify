@@ -29,7 +29,7 @@ class MainWindow(QMainWindow):
         loadUi(get_resource_path("assets/MainWindow.ui"), self)
         self.setWindowTitle(APP_NAME)
         dark_stylesheet = qdarkstyle.load_stylesheet_pyqt5()
-        self.setStyleSheet(dark_stylesheet)   
+        # self.setStyleSheet(dark_stylesheet)   
 
 # Application entry point
 def main():
