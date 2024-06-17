@@ -1,8 +1,8 @@
 import os
 import sys
-from PyQt6.QtCore import *
-from PyQt6.QtWidgets import *
-from PyQt6.uic import loadUi
+from PyQt5.QtCore import *
+from PyQt5.QtWidgets import *
+from PyQt5.uic import loadUi
 import qdarkstyle
 
 # Application Constant
@@ -28,7 +28,7 @@ class MainWindow(QMainWindow):
         super().__init__()
         loadUi(get_resource_path("assets/MainWindow.ui"), self)
         self.setWindowTitle(APP_NAME)
-        self.setFixedSize(820, 726)
+        self.setFixedSize(820, 803)
         dark_stylesheet = qdarkstyle.load_stylesheet_pyqt5()
         # self.setStyleSheet(dark_stylesheet)   
 

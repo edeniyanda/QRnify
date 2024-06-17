@@ -60,6 +60,21 @@
           <enum>QFrame::Raised</enum>
          </property>
          <layout class="QVBoxLayout" name="verticalLayout_7">
+          <property name="spacing">
+           <number>20</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
           <item>
            <layout class="QVBoxLayout" name="verticalLayout">
             <property name="spacing">
@@ -104,7 +119,7 @@
                 <number>5</number>
                </property>
                <item row="0" column="0">
-                <widget class="QTextEdit" name="textEdit">
+                <widget class="QTextEdit" name="textEdit_content">
                  <property name="minimumSize">
                   <size>
                    <width>0</width>
@@ -170,7 +185,7 @@
             <item>
              <layout class="QHBoxLayout" name="horizontalLayout">
               <item>
-               <widget class="QSlider" name="horizontalSlider">
+               <widget class="QSlider" name="horizontalSlider_version">
                 <property name="minimum">
                  <number>1</number>
                 </property>
@@ -225,7 +240,7 @@
             <item>
              <layout class="QHBoxLayout" name="horizontalLayout_2">
               <item>
-               <widget class="QSlider" name="horizontalSlider_2">
+               <widget class="QSlider" name="horizontalSlider_box_size">
                 <property name="minimum">
                  <number>1</number>
                 </property>
@@ -280,7 +295,7 @@
             <item>
              <layout class="QHBoxLayout" name="horizontalLayout_3">
               <item>
-               <widget class="QSlider" name="horizontalSlider_3">
+               <widget class="QSlider" name="horizontalSlider_border_size">
                 <property name="minimum">
                  <number>1</number>
                 </property>
@@ -338,7 +353,7 @@
                <number>3</number>
               </property>
               <item>
-               <widget class="QPushButton" name="pushButton">
+               <widget class="QPushButton" name="pushButton_fill_colour">
                 <property name="font">
                  <font>
                   <pointsize>9</pointsize>
@@ -350,7 +365,7 @@
                </widget>
               </item>
               <item>
-               <widget class="QLineEdit" name="lineEdit">
+               <widget class="QLineEdit" name="lineEdit_fill_colour">
                 <property name="text">
                  <string>#00000000</string>
                 </property>
@@ -390,7 +405,7 @@
                <number>3</number>
               </property>
               <item>
-               <widget class="QPushButton" name="pushButton_5">
+               <widget class="QPushButton" name="pushButton_bg">
                 <property name="font">
                  <font>
                   <pointsize>9</pointsize>
@@ -402,7 +417,7 @@
                </widget>
               </item>
               <item>
-               <widget class="QLineEdit" name="lineEdit_2">
+               <widget class="QLineEdit" name="lineEdit_bg_colour">
                 <property name="text">
                  <string>#00000000</string>
                 </property>
@@ -489,14 +504,14 @@
          </property>
          <layout class="QHBoxLayout" name="horizontalLayout_6">
           <item>
-           <widget class="QPushButton" name="pushButton_2">
+           <widget class="QPushButton" name="pushButton_generate">
             <property name="text">
              <string>Generate</string>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton_3">
+           <widget class="QPushButton" name="pushButton_save">
             <property name="text">
              <string>Save</string>
             </property>
@@ -514,7 +529,7 @@
  <resources/>
  <connections>
   <connection>
-   <sender>horizontalSlider</sender>
+   <sender>horizontalSlider_version</sender>
    <signal>valueChanged(int)</signal>
    <receiver>label_5</receiver>
    <slot>setNum(int)</slot>
@@ -530,7 +545,7 @@
    </hints>
   </connection>
   <connection>
-   <sender>horizontalSlider_2</sender>
+   <sender>horizontalSlider_box_size</sender>
    <signal>valueChanged(int)</signal>
    <receiver>label_8</receiver>
    <slot>setNum(int)</slot>
@@ -546,7 +561,7 @@
    </hints>
   </connection>
   <connection>
-   <sender>horizontalSlider_3</sender>
+   <sender>horizontalSlider_border_size</sender>
    <signal>valueChanged(int)</signal>
    <receiver>label_11</receiver>
    <slot>setNum(int)</slot>
