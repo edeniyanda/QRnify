@@ -28,6 +28,7 @@ class MainWindow(QMainWindow):
         super().__init__()
         loadUi(get_resource_path("assets/MainWindow.ui"), self)
         self.setWindowTitle(APP_NAME)
+        self.setFixedSize(820, 726)
         dark_stylesheet = qdarkstyle.load_stylesheet_pyqt5()
         # self.setStyleSheet(dark_stylesheet)   
 
