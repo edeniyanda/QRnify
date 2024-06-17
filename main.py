@@ -3,6 +3,7 @@ import sys
 from PyQt6.QtCore import *
 from PyQt6.QtWidgets import *
 from PyQt6.uic import loadUi
+import qdarkstyle
 
 # Application Constant
 APP_NAME = 'QRnify'
@@ -27,6 +28,8 @@ class MainWindow(QMainWindow):
         super().__init__()
         loadUi(get_resource_path("assets/MainWindow.ui"), self)
         self.setWindowTitle(APP_NAME)
+        dark_stylesheet = qdarkstyle.load_stylesheet_pyqt5()
+        self.setStyleSheet(dark_stylesheet)   
 
 # Application entry point
 def main():
